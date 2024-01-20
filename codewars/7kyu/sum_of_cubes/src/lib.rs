@@ -1,9 +1,6 @@
 fn sum_cubes(n: u32) -> u32 {
-    let mut result = 0;
-    for i in 1..n+1 {
-        result += i.pow(3);
-    }
-    result
+    let sum = (n * (n + 1) / 2).pow(2);
+    sum
 }
 
 #[cfg(test)]
