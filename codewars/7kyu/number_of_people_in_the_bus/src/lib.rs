@@ -1,9 +1,5 @@
 fn number(bus_stops:&[(i32,i32)]) -> i32 {
-    let mut result: i32 = 0;
-    for (on, off) in bus_stops {
-        result += on - off;
-    }
-    result
+    bus_stops.iter().fold(0, |acc, x| acc + x.0 - x.1)
 }
 
 #[test]
