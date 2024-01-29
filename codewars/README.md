@@ -10,3 +10,4 @@
 - [Number of people in the bus](7kyu/number_of_people_in_the_bus/) 
 - [Printer errors](7kyu/printer_errors/)
 - [Digital cypher](7kyu/digital_cypher/)
+- [String destroyer](7kyu/string_destroyer/)
