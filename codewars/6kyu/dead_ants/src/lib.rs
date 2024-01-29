@@ -1,16 +1,7 @@
 fn dead_ant_count(ants: &str) -> u32 {
-
-    let total_a = ants.chars().filter(|&c| c == 'a').count() as u32;
-    let total_n = ants.chars().filter(|&c| c == 'n').count() as u32;
-    let total_t = ants.chars().filter(|&c| c == 't').count() as u32;
-
+    let counts = ['a', 'n', 't'].iter().map(|&c| ants.matches(c).count() as u32).collect::<Vec<_>>();
     let live_ants = ants.matches("ant").count() as u32;
-
-    let dead_a = total_a.saturating_sub(live_ants);
-    let dead_n = total_n.saturating_sub(live_ants);
-    let dead_t = total_t.saturating_sub(live_ants);
-
-    *[dead_a, dead_n, dead_t].iter().max().unwrap()
+    counts.iter().map(|&count| count.saturating_sub(live_ants)).max().unwrap()
 }
 
 #[cfg(test)]
