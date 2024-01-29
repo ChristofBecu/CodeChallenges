@@ -15,3 +15,4 @@
 
 ### 6kyu
 - [Dead ants](6kyu/dead_ants)
+- [New cashier does not know about space or shift](6kyu/new_cashier_does_not_know_about_space_or_shift)
