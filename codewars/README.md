@@ -16,6 +16,7 @@
 ### 6kyu
 - [Dead ants](6kyu/dead_ants)
 - [New cashier does not know about space or shift](6kyu/new_cashier_does_not_know_about_space_or_shift)
+- [Counting duplicates](6kyu/counting_duplicates)
 
 ### 5kyu
 - [Rot13](5kyu/rot13)
